@@ -1,17 +1,17 @@
 # Site settings
-title: BY Blog
-SEOTitle: 2know的博客 | BY Blog
+title: DJ Blog
+SEOTitle: 2know的博客 | DJ Blog
 header-img: img/post-bg-desk.jpg
-email: qiubaiying@gmail.com
-description: "Every failure is leading towards success."
-keyword: "BY, BY Blog, 2know的博客, 2know, 致知, GPU, Adreno, mali, powerVR"
+email: 2know@gmail.com
+description: "一个人最大的幸福，莫过于在人生的中途，在最富有创造力的壮年，发现自己此生的使命。"
+keyword: "DJ, DJ Blog, 2know的博客, 2know, 致知, GPU, Adreno, mali, powerVR, OpenCV, caffe"
 url: "http://clay2know.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
 github_repo: "https://github.com/clay2know/clay2know.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Goals determine what you going to be!"
+sidebar-about-description: "逻辑可以让你从a到z,想象力却可以让你到达任何地方."
 sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -19,10 +19,11 @@ sidebar-avatar: /img/about-BY-gentle.jpg      # use absolute URL, seeing it's us
 # SNS settings
 RSS: false
 # weibo_username:     qiubaiying
-zhihu_username:     qiubaiying
-github_username:    qiubaiying
-facebook_username:  baiying.qiu.7
-jianshu_username:   e71990ada2fd
+# zhihu_username:     qiubaiying
+github_username:      clay2know
+csdn_username:        2know_clay
+# facebook_username:  baiying.qiu.7
+# jianshu_username:   e71990ada2fd
 #twitter_username:   qiubaiying
 
 

@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      OpenCV 源码
+subtitle:   OpenCV-filter2D（一）
+date:       2018-08-05
+author:     DJ
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - OpenCV
+    - filter2D
+    - 源码阅读
+---
 # 手撕OpenCV源码之filter2D(一)
 在上篇的GaussianBlur中提到,gaussianBlur使用的是filter2D的实现,因此上篇仅仅描述了高斯滤波器的
 生成细节,并没有针对滤波的计算细节及代码实现进行分析.本篇将详细介绍OpenCV中滤波的实现细节.

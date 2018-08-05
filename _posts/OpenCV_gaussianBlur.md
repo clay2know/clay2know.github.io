@@ -1,3 +1,16 @@
+---
+layout:     post
+title:      OpenCV 源码
+subtitle:   OpenCV-gaussianblur
+date:       2018-08-04
+author:     DJ
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - OpenCV
+    - gaussianblur
+    - 源码阅读
+---
 # 手撕OpenCV源码之gaussiablur
 ## GaussianBlur API解析           
 首先看源码:              

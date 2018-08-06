@@ -185,6 +185,3 @@ if (kernel_width * kernel_height < dft_filter_size)
 ```
 到此为止，filter2D API中的函数结构介绍结束，目前本系列文章中着重介绍c++实现，也就是ocvFilter2D；在后续的文章中也会介绍dft的c++实现；对于各中优化版本的实现，不做深究。以后的别的系列可能会介绍opencl版本的优化。           
 下一篇文章中将详细介绍ocvFilter2D的实现。           
-## 作者：2know         
-## 邮箱：dingjie_yao@163.com
-## 逻辑可以让你从a到z，想象力则可以让你到达任何地方。

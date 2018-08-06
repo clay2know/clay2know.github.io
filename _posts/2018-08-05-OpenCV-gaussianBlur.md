@@ -7,9 +7,8 @@ author:     DJ
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - OpenCV
+    - OpenCV源码阅读
     - gaussianblur
-    - 源码阅读
 ---
 # 手撕OpenCV源码之gaussiablur
 ## GaussianBlur API解析           

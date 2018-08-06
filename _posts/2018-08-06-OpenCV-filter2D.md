@@ -7,9 +7,8 @@ author:     DJ
 header-img: img/post-bg-ios9-web.jpg
 catalog: true
 tags:
-    - OpenCV
+    - OpenCV源码
     - filter2D
-    - 源码阅读
 ---
 # 手撕OpenCV源码之filter2D(一)
 在上篇的GaussianBlur中提到,gaussianBlur使用的是filter2D的实现,因此上篇仅仅描述了高斯滤波器的

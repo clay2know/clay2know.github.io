@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      OpenCV 源码
-subtitle:   OpenCV-filter2D（一）
+subtitle:   OpenCV-filter2D（二）
 date:       2018-08-05
 author:     DJ
 header-img: img/post-bg-ios9-web.jpg

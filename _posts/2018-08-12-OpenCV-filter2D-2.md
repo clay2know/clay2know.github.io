@@ -1,4 +1,16 @@
-# 手撕OpenCV源码之filter2D(2)
+---
+layout:     post
+title:      OpenCV 源码
+subtitle:   OpenCV-filter2D（一）
+date:       2018-08-05
+author:     DJ
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - OpenCV源码
+    - filter2D
+---
+# 手撕OpenCV源码之filter2D(二)
 ## cv::filter2D                 
 前文对这个函数的分析是为了了解filter的实现结构，所以比较粗略，本文将更细致的分析opencv中filter2D的c++实现的细节，不涉及各种加速的实现方式。
 首先还是看函数原型：              

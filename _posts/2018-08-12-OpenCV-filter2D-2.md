@@ -103,9 +103,11 @@ Mat getMat(int idx=-1) const;
  148         return *(const Mat*)obj;
  149     return getMat_(i);
  150 }
-```           
-很明显了，filter2D在调用的时候，使用了默认参数`i=-1`，也就是说默认输入是Mat的类型.所以直接返回const Mat类型；ofs是InputArray类中定义的void*类型。 但是从判断条件看，还有一个`kind() == MAT`。                 
-我们首先看MAT的定义(这是InputArray类中的一个枚举类型)：              
+```                  
+
+很明显了，filter2D在调用的时候，使用了默认参数`i=-1`，也就是说默认输入是Mat的类型.所以直接返回const Mat类型；ofs是InputArray类中定义的`void*`类型。 但是从判断条件看，还有一个`kind() == MAT`。                 
+我们首先看MAT的定义(这是InputArray类中的一个枚举类型)：                      
+
 ```               
 155     enum {
  156         KIND_SHIFT = 16,
@@ -224,15 +226,17 @@ MASK & flags:  0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 ```                         
  该函数是用于判断锚点是否超出越界。                    
  
- #### 边界设定            
+#### 边界设定                
+ 
  这一部分主要涉及这两条语句：               
  ```  
  if( (borderType & BORDER_ISOLATED) == 0 )
  4915         src.locateROI( wsz, ofs );
  ```              
- 关于边界填充类型的枚举前文已经介绍了，大家可以翻到前面看，容易知道，不需要边界填充的时候，相与结果是1，否则相与结果都是0，也就是说，大多数情况下，需要执行locateROI函数；                      
+ 关于边界填充类型的枚举前文已经介绍了，大家可以翻到前面看，容易知道，不需要边界填充的时候，相与结果是1，否则相与结果都是0，也就是说，大多数情况下，需要执行locateROI函数；                     
  
- ## ocvFilter2D                    
+## ocvFilter2D                      
+
  接下来函数调用了hal::filter2D函数，关于这个函数在前一篇博文中介绍过：   
  ```
  4917     hal::filter2D(src.type(), dst.type(), kernel.type(),

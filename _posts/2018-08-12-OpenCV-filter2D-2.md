@@ -262,7 +262,7 @@ MASK & flags:  0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
  ```                   
  这个函数很简单，做了3件事，第一是申请Mat，为kernel，src和dst分别申请了Mat；第二是初始化了一个线性滤波器，接触过OpenCV的同学可能知道，OpenCV中关于滤波，有一个FilterEngine类。
  本文就介绍到此，接下来关于createLinearFilter都属于FilterEngine中的内容，在下篇博文中继续剖析。
-#欢迎指正
-#作者：2know
-#个人网站：2know.top
-#邮箱：dingjie_yao@163.com
+# 欢迎指正
+# 作者：2know
+# 个人网站：2know.top
+

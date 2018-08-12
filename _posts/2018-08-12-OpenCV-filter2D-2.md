@@ -128,13 +128,15 @@ Mat getMat(int idx=-1) const;
  173         STD_BOOL_VECTOR   =12 << KIND_SHIFT,
  174         STD_VECTOR_CUDA_GPU_MAT = 13 << KIND_SHIFT,
  175         STD_ARRAY         =14 << KIND_SHIFT,
-```        
+```             
+
 可以看出，这里定义了所有InputArray支持的类型；
 接着看kind()函数，该函数也定义在InputArray类中，官方的注释是这样的：                
 ```   
 kind() can be used to distinguish Mat from
        `vector<>` etc., but normally it is not needed.
-```         
+```               
+
 通过注释能知道kind()就是用来判断InputArray的具体类型的；              
 它的实现是这样的(`opencv/modules/core/src/matrix_wrap.cpp`)：                     
 
@@ -198,7 +200,8 @@ MASK & flags:  0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
       }
 ```         
 这个函数可以返回指定的行数据，也就是行的起始位置。          
-到此为止，关于输入数据的类型解析结束，关于InputArray/OutputArray/Mat等，都有相应的类来实现，也相当强大，以后会写博客专门介绍。              
+到此为止，关于输入数据的类型解析结束，关于InputArray/OutputArray/Mat等，都有相应的类来实现，也相当强大，以后会写博客专门介绍。             
+
 #### 滤波器锚点介绍(normalizeAnchor)      
 关于锚点的含义很容易理解，通俗讲就是滤波计算得到的结果，替换原图像中什么位置的点，大多是情况下，我们替换的是中心点，例如3×3的kernel，我们替换的是(1,1)位置的点(左上角为原点)。这里主要介绍`normalizeAnchor`这个函数，函数实现如下(`opencv/modules/imgproc/src/filterengine.hpp`)：                 
 ```      
@@ -219,15 +222,16 @@ MASK & flags:  0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
  183     bool inside(const Rect_<_Tp>& r) const;
 
 ```                         
- 该函数是用于判断锚点是否超出越界。    
+ 该函数是用于判断锚点是否超出越界。                    
+ 
  #### 边界设定            
  这一部分主要涉及这两条语句：               
  ```  
  if( (borderType & BORDER_ISOLATED) == 0 )
  4915         src.locateROI( wsz, ofs );
  ```              
- 关于边界填充类型的枚举前文已经介绍了，大家可以翻到前面看，容易知道，不需要边界填充的时候，相与结果是1，否则相与结果都是0，也就是说，大多数情况下，需要执行locateROI函数；                  
-
+ 关于边界填充类型的枚举前文已经介绍了，大家可以翻到前面看，容易知道，不需要边界填充的时候，相与结果是1，否则相与结果都是0，也就是说，大多数情况下，需要执行locateROI函数；                      
+ 
  ## ocvFilter2D                    
  接下来函数调用了hal::filter2D函数，关于这个函数在前一篇博文中介绍过：   
  ```

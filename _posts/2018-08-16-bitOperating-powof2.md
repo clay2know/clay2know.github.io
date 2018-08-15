@@ -1,15 +1,27 @@
 ---
-layout:       post
-title:        bit operate
-subtitle:     about pow of 2
-date:         2018-08-15
-author:       DJ
-header-image: image/post-bg-ios-web.jpg
-catalog:      true
+layout:		post
+title:        	bit operate
+subtitle:     	about pow of 2
+date:         	2018-08-15
+author:       	DJ
+header-image: 	image/post-bg-ios-web.jpg
+catalog:      	true
 tags:
-    - c++
+	- c++
 	- bit operate
----            
+---  
+---
+layout:     post
+title:      OpenCV 源码
+subtitle:   OpenCV-filter2D（二）
+date:       2018-08-05
+author:     DJ
+header-img: img/post-bg-ios9-web.jpg
+catalog: true
+tags:
+    - OpenCV源码
+    - filter2D
+---
 
 # 关于2的幂                  
 
